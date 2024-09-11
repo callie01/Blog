@@ -3,10 +3,10 @@ title: vue+elementUI 动态合并数据相同的单元格（可指定合并列�
 date: 2023/07/12
 tags:
  - vue
- - 单元格
-categories:
- - 工作
+ - elementUI
  - 框架
+categories:
+ - 前端
 ---
 
 ## 首先，遇到了复杂表格的需求不要慌，先来捋一下思路
@@ -21,10 +21,10 @@ categories:
 注：本文由此参考文档[el-table合并单元格](https://blog.csdn.net/qq_23073811/article/details/127004611) 基础上改进。
 ## 2.效果展示：
 
-![image.png](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a60278083e6f4246acb317cd90d0088f~tplv-k3u1fbpfcp-watermark.image?)
+![image-files](https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a60278083e6f4246acb317cd90d0088f~tplv-k3u1fbpfcp-watermark.image)
 
 
-![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/783df2df43d64a99a6f33a1a673f5591~tplv-k3u1fbpfcp-watermark.image?)
+![image.png](https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/783df2df43d64a99a6f33a1a673f5591~tplv-k3u1fbpfcp-watermark.image)
 ## 3. 实现思路：
 #### 3.1 由[文档](https://element.eleme.cn/#/zh-CN/component/table#table-column-scoped-slot) 可知：el-table组件主要靠span-method方法实现合并
 
