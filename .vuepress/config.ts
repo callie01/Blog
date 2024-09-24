@@ -1,10 +1,15 @@
 import { defineUserConfig } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 import { viteBundler } from "@vuepress/bundler-vite";
-import { webpackBundler } from "@vuepress/bundler-webpack";
+// import { webpackBundler } from "@vuepress/bundler-webpack";
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+// import { watermarkPlugin } from "@vuepress/plugin-watermark";
+import { componentsPlugin } from "vuepress-plugin-components";
 
 export default defineUserConfig({
-  title: "孜孜的中转站",
+  // host: "localhost", // ip
+  port: 8889, //端口号
+  title: "孜孜不倦",
   description: "孜孜的个人网站",
   base: "/Blog/",
   bundler: viteBundler(),
@@ -38,12 +43,22 @@ export default defineUserConfig({
       {
         text: "工作",
         children: [
-          //   { text: "JS", link: "/categories/gongzuo/1.html" },
-          //   { text: "CSS", link: "/categories/gongzuo/1.html" },
-          { text: "AI工具", link: "/tags/Ai/1.html" },
-          { text: "VsCode插件", link: "/tags/VsCode/1.html" },
-          { text: "浏览器插件", link: "/tags/liulanqi/1.html" },
-          { text: "前端学习笔记", link: "/categories/qianduan/1.html" },
+          {
+            text: "工具",
+            children: [
+              { text: "在线AI工具", link: "/tags/Ai/1.html" },
+              { text: "浏览器插件", link: "/tags/Ai/1.html" },
+              { text: "VsCode插件", link: "/tags/Ai/1.html" },
+            ],
+          },
+          {
+            text: "笔记",
+            children: [
+              { text: "Vue相关", link: "/tags/CSS/1.html" },
+              { text: "建站教程", link: "/tags/Ai/1.html" },
+              { text: "前端学习路线", link: "/tags/CSS/1.html" },
+            ],
+          },
         ],
       },
       {
@@ -55,8 +70,6 @@ export default defineUserConfig({
         ],
       },
       { text: "归档", link: "/timeline.html" },
-      // { text: "标签", link: "/tags/guanyuwo/1.html" },
-      // { text: "博客", link: "/posts.html" },
       { text: "关于我", link: "/blogs/life/About" },
     ],
     commentConfig: {
@@ -73,5 +86,16 @@ export default defineUserConfig({
       },
     },
   }),
-  // debug: true,
+  // //插件配置
+  plugins: [
+    mdEnhancePlugin({
+      component: true,
+      tabs: true,
+    }),
+    componentsPlugin({
+      components: [],
+      // 插件选项
+    }),
+  ],
+  debug: true,
 });

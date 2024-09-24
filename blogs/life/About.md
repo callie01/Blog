@@ -33,8 +33,9 @@ categories:
 * 容易没电，没电会陷入发呆状态（重启得投喂冰淇淋和广式糖水）
 
 
-## 联系方式
-* 💎B站、小红书同名（潦草的孜孜）😬
+## 联系我
+* 💎B站、小红书同名（潦草的孜孜）
 * 📫邮箱：callie99@163.com
 * <xicons icon="LogoGithub" />GitHub：[https://github.com/callie01](https://github.com/callie01)
-<img src="/life/About/me.jpg" width="30%">
+<img src="/life/About/me.jpg" width="30%" >
+

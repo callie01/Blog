@@ -7,20 +7,26 @@ categories:
  - 生活
 ---
 
-<!-- 1.天空之城（全球航拍爱好者和专业摄影师的社交平台）
-https://www.skypixel.com/
+## 摄影/壁纸
 
-2.toopBook（高效生活视频书）
-https://topbook.cc/overview
+<Card :list=list></Card>
 
-3.今日热榜
-https://tophub.today/
+<script setup lang="ts">
+import { ref } from 'vue'
+const list = ref([
 
-4.全历史
-https://www.allhistory.com/
+      {
+    title: "无水印高清壁纸",
+    icon: "",
+    link: "https://wall.alphacoders.com",
+    remark: "网站2",
+  },
+   {
+    title: "天空之城",
+    icon: "",
+    link: "https://www.skypixel.com",
+    remark: "全球航拍爱好者和专业摄影师的社交平台",
+  },
+    ])
 
-5.无水印高清壁纸
-https://wall.alphacoders.com/ -->
-
-
-文章更新中...
+</script>
