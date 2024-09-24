@@ -2,13 +2,13 @@ import { defineUserConfig } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 import { viteBundler } from "@vuepress/bundler-vite";
 // import { webpackBundler } from "@vuepress/bundler-webpack";
-import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+// import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 // import { watermarkPlugin } from "@vuepress/plugin-watermark";
-import { componentsPlugin } from "vuepress-plugin-components";
+// import { componentsPlugin } from "vuepress-plugin-components";
 
 export default defineUserConfig({
   // host: "localhost", // ip
-  port: 8889, //端口号
+  port: 3100, //端口号
   title: "孜孜不倦",
   description: "孜孜的个人网站",
   base: "/Blog/",
@@ -46,17 +46,20 @@ export default defineUserConfig({
           {
             text: "工具",
             children: [
-              { text: "在线AI工具", link: "/tags/Ai/1.html" },
-              { text: "浏览器插件", link: "/tags/Ai/1.html" },
-              { text: "VsCode插件", link: "/tags/Ai/1.html" },
+              { text: "在线AI工具", link: "/tags/AiTool/1.html" },
+              { text: "浏览器插件", link: "/tags/chajian/1.html" },
+              { text: "VsCode插件", link: "/tags/chajian/1.html" },
             ],
           },
           {
             text: "笔记",
             children: [
-              { text: "Vue相关", link: "/tags/CSS/1.html" },
-              { text: "建站教程", link: "/tags/Ai/1.html" },
-              { text: "前端学习路线", link: "/tags/CSS/1.html" },
+              { text: "Vue相关", link: "/tags/kuangjia/1.html" },
+              { text: "建站教程", link: "/tags/qianduan/1.html" },
+              {
+                text: "前端学习路线",
+                link: "/tags/qianduan/1.html",
+              },
             ],
           },
         ],
@@ -88,14 +91,14 @@ export default defineUserConfig({
   }),
   // //插件配置
   plugins: [
-    mdEnhancePlugin({
-      component: true,
-      tabs: true,
-    }),
-    componentsPlugin({
-      components: [],
-      // 插件选项
-    }),
+    // mdEnhancePlugin({
+    //   component: true,
+    //   tabs: true,
+    // }),
+    // componentsPlugin({
+    //   components: [],
+    //   // 插件选项
+    // }),
   ],
   debug: true,
 });
