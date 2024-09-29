@@ -43,19 +43,18 @@ export default defineUserConfig({
           {
             text: "工具",
             children: [
-              { text: "在线AI工具", link: "/tags/AiTool/1.html" },
-              { text: "浏览器插件", link: "/tags/chajian/1.html" },
-              { text: "VsCode插件", link: "/tags/chajian/1.html" },
+              { text: "AI工具", link: "/blogs/work/AiTool.html" },
+              { text: "常用插件", link: "/tags/chajian/1.html" },
             ],
           },
           {
             text: "笔记",
             children: [
-              { text: "Vue相关", link: "/tags/kuangjia/1.html" },
-              { text: "建站教程", link: "/tags/qianduan/1.html" },
+              { text: "框架", link: "/tags/kuangjia/1.html" },
+              { text: "建站教程", link: "/blogs/work/WebSite.html" },
               {
                 text: "前端学习路线",
-                link: "/tags/qianduan/1.html",
+                link: "/blogs/work/LearningPath.html",
               },
             ],
           },
@@ -64,7 +63,7 @@ export default defineUserConfig({
       {
         text: "生活",
         children: [
-          { text: "游泳", link: "/tags/youyong/1.html" },
+          { text: "游泳", link: "/blogs/life/Swimming.html" },
           { text: "潜水", link: "/tags/qianshui/1.html" },
           { text: "心情随笔", link: "/tags/suibi/1.html" },
         ],
@@ -93,7 +92,7 @@ export default defineUserConfig({
     //   tabs: true,
     // }),
     componentsPlugin({
-      components: ["BiliBili"],
+      components: ["BiliBili", "VPCard"],
       // 插件选项
     }),
   ],
