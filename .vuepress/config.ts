@@ -7,7 +7,7 @@ export default defineUserConfig({
   // host: "localhost", // ip
   port: 8889, //端口号
   title: "孜孜不倦",
-  description: "孜孜的个人网站",
+  description: "CallieLi's Blog",
   base: "/",
   bundler: viteBundler(),
   // bundler: webpackBundler(),
