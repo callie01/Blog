@@ -12,7 +12,8 @@
     "docs:build": "vuepress-webpack build docs",
     "docs:clean-dev": "vuepress-webpack dev docs --clean-cache",
     "docs:dev": "vuepress-webpack dev docs",
-    "docs:update-package": "npx vp-update"
+    "docs:update-package": "npx vp-update",
+    "deploy": "sh deploy.sh"
   },
   "dependencies": {
     "@vuepress/bundler-vite": "2.0.0-rc.14",

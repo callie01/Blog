@@ -1,20 +1,16 @@
 import { defineUserConfig } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 import { viteBundler } from "@vuepress/bundler-vite";
-// import { webpackBundler } from "@vuepress/bundler-webpack";
-// import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
-// import { watermarkPlugin } from "@vuepress/plugin-watermark";
-// import { componentsPlugin } from "vuepress-plugin-components";
 
 export default defineUserConfig({
   // host: "localhost", // ip
-  port: 3100, //端口号
+  port: 8889, //端口号
   title: "孜孜不倦",
   description: "孜孜的个人网站",
-  base: "/Blog/",
+  base: "/",
   bundler: viteBundler(),
   // bundler: webpackBundler(),
-  head: [["link", { rel: "icon", href: "/Blog/logo.png" }]],
+  head: [["link", { rel: "icon", href: "/logo.png" }]],
   theme: recoTheme({
     style: "@vuepress-reco/style-default",
     logo: "/logo.png",
@@ -67,9 +63,9 @@ export default defineUserConfig({
       {
         text: "生活",
         children: [
-          { text: "潜水", link: "/tags/qianshuizhinan/1.html" },
+          { text: "游泳", link: "/tags/youyong/1.html" },
+          { text: "潜水", link: "/tags/qianshui/1.html" },
           { text: "心情随笔", link: "/tags/suibi/1.html" },
-          { text: "有趣的网站", link: "/tags/wangzhanheji/1.html" },
         ],
       },
       { text: "归档", link: "/timeline.html" },
