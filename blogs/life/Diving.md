@@ -2,7 +2,7 @@
 title: 潜水怎么入门？自由潜or水肺or美人鱼看这一篇就足够
 date: 2024/09/10
 tags:
- - 潜水指南
+ - 潜水
 categories:
  - 生活
 ---
@@ -17,6 +17,5 @@ categories:
 [自由潜Aida2资料下载](https://www.alipan.com/s/A44KoeKyb37)
 
 :::
-
 
 文章更新中...
