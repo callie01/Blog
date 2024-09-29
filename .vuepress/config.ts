@@ -1,6 +1,7 @@
 import { defineUserConfig } from "vuepress";
 import recoTheme from "vuepress-theme-reco";
 import { viteBundler } from "@vuepress/bundler-vite";
+import { componentsPlugin } from "vuepress-plugin-components";
 
 export default defineUserConfig({
   // host: "localhost", // ip
@@ -91,10 +92,10 @@ export default defineUserConfig({
     //   component: true,
     //   tabs: true,
     // }),
-    // componentsPlugin({
-    //   components: [],
-    //   // 插件选项
-    // }),
+    componentsPlugin({
+      components: ["BiliBili"],
+      // 插件选项
+    }),
   ],
   debug: true,
 });
