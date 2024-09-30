@@ -25,7 +25,7 @@ categories:
 
 <VPCard
   title="篡改猴"
-  desc="使用用户脚本自由地改变网络"
+  desc="插件管理工具"
   logo="/work/Browser/icon48.png"
   background="rgba(253, 230, 138, 0.15)"
 />
